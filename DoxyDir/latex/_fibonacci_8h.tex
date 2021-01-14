@@ -1,0 +1,46 @@
+\hypertarget{_fibonacci_8h}{}\doxysection{Fibonacci.\+h File Reference}
+\label{_fibonacci_8h}\index{Fibonacci.h@{Fibonacci.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_fibonacci_d_b__t}{Fibonacci\+DB\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em the data structure of the fibonacci set \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_fibonacci_8h_aee38db372065647e2e14be663a0c4e21}\label{_fibonacci_8h_aee38db372065647e2e14be663a0c4e21}} 
+typedef struct \mbox{\hyperlink{struct_fibonacci_d_b__t}{Fibonacci\+DB\+\_\+t}} \mbox{\hyperlink{_fibonacci_8h_aee38db372065647e2e14be663a0c4e21}{Fibonacci\+DB}}
+\begin{DoxyCompactList}\small\item\em the data structure of the fibonacci set \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long long \mbox{\hyperlink{_fibonacci_8h_ab4283c698b1938d802c63ce6ade032c1}{Fibonacci}} (size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em function that gets an index of number in the Fibonacci set, and returns the value of it. The library stores calculated values in a Dynamic allocation in a structure. In the beginning, the DB is empty. When asked to calculate Fibonacci(n), the function checks whether the value is already stored in the DB. If it is, it returns that number; if it isn\textquotesingle{}t, the function will calculate that number and store it in the DB for future use. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_fibonacci_8h_a6ed6f4b1bd9ff22eae3fcd0cdd8b87a4}\label{_fibonacci_8h_a6ed6f4b1bd9ff22eae3fcd0cdd8b87a4}} 
+void \mbox{\hyperlink{_fibonacci_8h_a6ed6f4b1bd9ff22eae3fcd0cdd8b87a4}{Free\+Fibonacci\+DB}} ()
+\begin{DoxyCompactList}\small\item\em a function that free all the dynamic allocation of the Fibonacci set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+functions that are ment for a data structure of Fibonacci set implementation 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_fibonacci_8h_ab4283c698b1938d802c63ce6ade032c1}\label{_fibonacci_8h_ab4283c698b1938d802c63ce6ade032c1}} 
+\index{Fibonacci.h@{Fibonacci.h}!Fibonacci@{Fibonacci}}
+\index{Fibonacci@{Fibonacci}!Fibonacci.h@{Fibonacci.h}}
+\doxysubsubsection{\texorpdfstring{Fibonacci()}{Fibonacci()}}
+{\footnotesize\ttfamily unsigned long long Fibonacci (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+function that gets an index of number in the Fibonacci set, and returns the value of it. The library stores calculated values in a Dynamic allocation in a structure. In the beginning, the DB is empty. When asked to calculate Fibonacci(n), the function checks whether the value is already stored in the DB. If it is, it returns that number; if it isn\textquotesingle{}t, the function will calculate that number and store it in the DB for future use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the index of the fibonacci value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of it 
+\end{DoxyReturn}
